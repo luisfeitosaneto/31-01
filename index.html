@@ -35,6 +35,24 @@
       margin-bottom: 18px;
       font-size: 16px;
     }
+
+    .music-button {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 18px;
+      font-size: 16px;
+      font-family: 'Playfair Display', serif;
+      background: #fff;
+      border: 2px solid #2c2c2c;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .music-button:hover {
+      background: #2c2c2c;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
@@ -58,6 +76,12 @@
     <p>Não escrevo esperando nada além da honestidade do que você sentir. Seja qual for a resposta, ou mesmo o silêncio, eu vou respeitar.</p>
 
     <p>Que hoje simbolize o dia em que nos encontramos pela primeira vez e, com respeito ao tempo, a chance de um novo reencontro… ou o dia em que nos conhecemos e, com o tempo, nos tornamos apenas conhecidos. Conhecidos de uma história que só nós dois entendemos. Conhecidos que a vida afastou, mas não conseguiu apagar.</p>
+
+    <!-- Botão de música -->
+    <button class="music-button" onclick="document.getElementById('musica').play()">▶ Ouvir música</button>
+    <audio id="musica" loop>
+      <source src="https://drive.google.com/uc?export=download&id=1AlF9t1rMLswklGfmOQ0M8JBQLIY5nQPm" type="audio/mpeg">
+    </audio>
   </div>
 </body>
 </html>
