@@ -8,9 +8,6 @@
   <!-- Fonte suave -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
-  <!-- Biblioteca do QR Code -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-
   <style>
     body {
       margin: 0;
@@ -39,24 +36,6 @@
       margin-bottom: 18px;
       font-size: 16px;
     }
-
-    .qr-section {
-      margin-top: 60px;
-      text-align: center;
-    }
-
-    .qr-text {
-      font-family: 'Playfair Display', serif;
-      font-style: italic;
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    #qrcode {
-      display: inline-block;
-      padding: 16px;
-      background: white;
-    }
   </style>
 </head>
 <body>
@@ -78,19 +57,6 @@
     <p>Não escrevo esperando nada além da honestidade do que você sentir. Seja qual for a resposta, ou mesmo o silêncio, eu vou respeitar.</p>
 
     <p>Que hoje simbolize o dia em que nos encontramos pela primeira vez e, com respeito ao tempo, a chance de um novo reencontro… ou o dia em que nos conhecemos e, com o tempo, nos tornamos apenas conhecidos. Conhecidos de uma história que só nós dois entendemos. Conhecidos que a vida afastou, mas não conseguiu apagar.</p>
-
-    <div class="qr-section">
-      <div class="qr-text">Leia quando fizer sentido.</div>
-      <div id="qrcode"></div>
-    </div>
   </div>
-
-  <script>
-    new QRCode(document.getElementById("qrcode"), {
-      text: window.location.href,
-      width: 160,
-      height: 160
-    });
-  </script>
 </body>
 </html>
